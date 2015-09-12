@@ -3,11 +3,12 @@ var http = require("http"),
     app = express();
 
 app.use("/", express.static("../web/"));
+app.use("/q", express.static("../web/"));
 
 
 app.route("/test")
     .get(function(request, response) {
-        console.log(request);
+        console.log(request.query);
         response.send("nice");
     });
 
