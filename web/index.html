@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-ng-app="rootApp">
+<html ng-app="rootApp">
     <head>
         <title>TO DO List</title>
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
@@ -9,7 +9,7 @@
         <script type="text/javascript" src="js/controllers/mainController.js"></script>
     </head>
     <body>
-        <div class="hero-unit">
+        <div class="hero-unit" ng-controller="mainController">
             WUHU _ We're going places! :D
             {{name}}
         </div>
