@@ -9,5 +9,5 @@ var APP = angular.module("APP", ['ngRoute']);
 APP.directive("topbar", [function() {
     return {
         templateUrl: "components/topbar.html"
-    }
-}])
+    };
+}]);

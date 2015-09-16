@@ -1,11 +1,5 @@
 var APP = angular.module("APP");
 
-APP.service("contacts", function($http) {
-    this.get = function() {
-        return $http.get("test");
-    }
-});
-
 APP.config(function($routeProvider, $locationProvider) {
     $routeProvider
         .when("/contact", {

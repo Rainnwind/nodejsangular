@@ -10,13 +10,13 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-            <li class="active">
+            <li ng-class="is_active('/')">
                 <a ng-href="/">Home</a>
             </li>
-            <li>
+            <li ng-class="is_active('/about')">
                 <a ng-href="/about">About</a>
             </li>
-            <li>
+            <li ng-class="is_active('/contact')">
                 <a ng-href="/contact">Contact</a>
             </li>
             <li class="dropdown">
@@ -43,13 +43,14 @@
             </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li>
-                <a href="../navbar/">Default</a>
+            <li ng-class="is_active('/default')">
+                <a ng-href="/default">Default</a>
             </li>
-            <li>
-                <a href="../navbar-static-top/">Static top</a>
+            <li ng-class="is_active('/statictop')">
+                <a ng-href="/statictop">Static top</a>
             </li>
-            <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a>
+            <li ng-class="is_active('/sronly')">
+                <a ng-href="/sronly">Fixed top <span class="sr-only">(current)</span></a>
             </li>
         </ul>
     </div>

@@ -6,7 +6,10 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON("package.json"),
 
         jshint: { //Check all selfwritten JS before concatting with jQuery and angularJS
-            src: "js/**/*"
+            options: {
+                force: true
+            },
+            src: "app/**/*.js"
         },
         clean: ["dist/*"],
         concat: { //Concat all files to one BIG file
