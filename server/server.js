@@ -2,8 +2,9 @@ var http = require("http"),
     express = require("express"),
     app = express();
 
-app.use("/", express.static("../web/"));
-app.use("/q", express.static("../web/"));
+app.use("/", express.static("../web/dist/"));
+app.use("/about", express.static("../web/dist/"));
+app.use("/contact", express.static("../web/dist/"));
 
 
 app.route("/test")
