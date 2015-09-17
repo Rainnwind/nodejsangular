@@ -41265,6 +41265,12 @@ APP.directive("topbar", [function() {
         templateUrl: "components/topbar.html"
     };
 }]);
+
+APP.directive("footer", [function() {
+    return {
+        templateUrl: "components/footer.html"
+    };
+}]);
 var APP = angular.module("APP");
 
 APP.config(function($routeProvider, $locationProvider) {

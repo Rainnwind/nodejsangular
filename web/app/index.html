@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html ng-app="APP">
-    <head>
-        <meta charset="utf-8">
-        <title>First project</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <base href="/"> <!-- MUCHOS IMPORTANTE for routing -->
-        <link rel="stylesheet" type="text/css" href="css/main.min.css">
-        <script type="text/javascript" src="js/main.min.js"></script>
-    </head>
-    <body ng-controller="applicationController">
+<head>
+    <meta charset="utf-8">
+    <title>First project</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/"> <!-- MUCHOS IMPORTANTE for routing -->
+    <link rel="stylesheet" type="text/css" href="css/main.min.css">
+    <script type="text/javascript" src="js/main.min.js"></script>
+</head>
+<body ng-controller="applicationController">
+
+    <!-- Everything related to topbar goes in here: app/components/topbar.html -->
     <nav topbar class="navbar navbar-inverse navbar-default"></nav>
-    <div class="container">
-        <div class="hero-unit">
-            {{routes.active}}
-            <div ng-view></div>
-        </div>
-    </div>
+
+    <!-- All navigational goes in here -->
+    <div ng-view class="container"></div>
+
+    <!-- Everything related to footer goes in here: app/components/footer.html -->
+    <footer class="footer"></footer>
+
 </body>
 </html>

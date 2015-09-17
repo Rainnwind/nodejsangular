@@ -11,3 +11,9 @@ APP.directive("topbar", [function() {
         templateUrl: "components/topbar.html"
     };
 }]);
+
+APP.directive("footer", [function() {
+    return {
+        templateUrl: "components/footer.html"
+    };
+}]);
